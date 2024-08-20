@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -12,28 +12,16 @@
             background-color: #2D2D2D; /* Dark gray background color */
             color: white; /* Set text color to white for contrast */
             font-family: 'Roboto', sans-serif; /* Apply the Google Font */
-            margin: 0; /* Remove default margin */
+            margin: auto; /* Remove default margin */
             padding: 0; /* Remove default padding */
             text-align: center; /* Center-align text and button */
             background: linear-gradient(135deg,);
             text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
         }
 
-        /* Styles for the first image */
-        #img1 {
-            border-radius: 15px; /* Rounded edges */
-            width: 70%; /* Make image larger */
-            max-width: 400px; /* Limit maximum width */
-            height: auto; /* Maintain aspect ratio */
-            display: block; /* Ensure the image is a block element */
-            margin: 20px auto; /* Center the image and add margin */
-            background: linear-gradient(135deg, #6e45e2, #88d3ce); /* Keep gradient on active */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Reset shadow on click */
-            transform: scale(1); /* Reset size on click */
-        }
-
-        /* Styles for the second image */
-        #img2 {
+  
+        /* Styles for the image */
+        #img {
             border-radius: 0px; /* No rounded edges */
             width: 90%; /* Make image larger */
             max-width: 1000px; /* Limit maximum width */
@@ -45,6 +33,17 @@
             transform: scale(1); /* Reset size on click */
         }
 
+        #league {
+            border-radius: 0px; /* No rounded edges */
+            width: 90%; /* Make image larger */
+            max-width: 150px; /* Limit maximum width */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Ensure the image is a block element */
+            margin: auto; /* Center the image and add more margin */
+            margin-bottom: 10px;
+            margin-top: 10px;
+            
+        }
 
         button {
             background: linear-gradient(135deg, #6e45e2, #88d3ce); /* Gradient background */
@@ -57,9 +56,10 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
             cursor: pointer; /* Pointer cursor on hover */
             transition: all 0.3s ease; /* Smooth transition effect */
-            margin-top: 5px; /* Add space above the button */
-            margin-bottom: 20px;
-            margin-left:8px;
+            margin-top: 10px; /* Add space above the button */
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
         }
 
             button:hover {
@@ -77,22 +77,24 @@
 </head>
 <body>
 
-    <!--Typogroaphy-->
+    <!--<h1>League of Legends Profile</h1>-->
+    <img id="league" src="Footages/LoL_Logo_Flat_GOLD.png" />
+    <img id="img" src="Footages/Lol Profile.png">
 
-    <h1>League of Legends Profile</h1>
+    <button type="button" onclick="document.getElementById('line').innerHTML = 'Since Season 2020' ">Since when I started playing?</button>
+    <button type="button" onclick="document.getElementById('line').innerHTML = 'Diamond III'">Peak Rank?</button>
+    <button type="button" onclick="document.getElementById('line').innerText = 'Yasuo⚔️1,102,256 Points'">Highset Mastery?</button>
+    <button type="button" onclick="document.getElementById('line').innerText = 'Europe West (EUW)'">Which Server?</button>
+    <button type="button" onclick="document.getElementById('line').innerText = ''">Clear</button>
 
-    <!--Images-->
+    <h2 id="line"></h2>
 
-    <img id="img2" src="Lol Profile.png" alt="test">
-    <button type="button" onclick="alert('Diamond IV')">Peak Rank</button>
-    <button type="button" onclick="alert('Yasuo 1,102,256 Points⚔️')">Highset Mastery</button>
     <a href="https://www.op.gg/summoners/euw/XANDER-BLADE?queue_type=SOLORANKED">
         <button>OP.GG</button>
     </a>
 
-    <!--scripts-->
-    <!--<script src="Scripts/Alert.js"></script>-->
 
+    <!--<script src="Scripts/Alert.js"></script>-->
 
 </body>
 </html>
