@@ -2,99 +2,23 @@
 <html lang="en">
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xander's website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+     <title>Xander's website</title>
+     <link rel="stylesheet" href="Styles.css">
+     <link rel="icon" type="image/png" href="Images\Sett icon2.png">    
 
-    <style> 
-        body {
-            background-color: #2D2D2D; /* Dark gray background color */
-            color: white; /* Set text color to white for contrast */
-            font-family: 'Roboto', sans-serif; /* Apply the Google Font */
-            margin: auto; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-            text-align: center; /* Center-align text and button */
-            background: linear-gradient(135deg,);
-            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-        }
-
-  
-        /* Styles for the image */
-        #img {
-            border-radius: 0px; /* No rounded edges */
-            width: 90%; /* Make image larger */
-            max-width: 1000px; /* Limit maximum width */
-            height: auto; /* Maintain aspect ratio */
-            display: block; /* Ensure the image is a block element */
-            margin: 10px auto; /* Center the image and add more margin */
-            background: linear-gradient(135deg, #6e45e2, #88d3ce); /* Keep gradient on active */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Reset shadow on click */
-            transform: scale(1); /* Reset size on click */
-        }
-
-        #league {
-            border-radius: 0px; /* No rounded edges */
-            width: 90%; /* Make image larger */
-            max-width: 150px; /* Limit maximum width */
-            height: auto; /* Maintain aspect ratio */
-            display: block; /* Ensure the image is a block element */
-            margin: auto; /* Center the image and add more margin */
-            margin-bottom: 10px;
-            margin-top: 10px;
-            
-        }
-
-        button {
-            background: linear-gradient(135deg, #6e45e2, #88d3ce); /* Gradient background */
-            border: none; /* Remove default border */
-            color: white; /* Text color */
-            padding: 10px 20px; /* Padding inside the button */
-            font-size: 16px; /* Font size */
-            font-family: 'Roboto', sans-serif; /* Apply the Google Font to button */
-            border-radius: 25px; /* Rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-            cursor: pointer; /* Pointer cursor on hover */
-            transition: all 0.3s ease; /* Smooth transition effect */
-            margin-top: 10px; /* Add space above the button */
-            margin-bottom: 10px;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-
-            button:hover {
-                background: linear-gradient(115deg, #88d3ce, #6e45e2); /* Inverse gradient on hover */
-                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
-                transform: scale(1.05); /* Slightly enlarge the button */
-            }
-
-            button:active {
-                background: linear-gradient(135deg, #6e45e2, #88d3ce); /* Keep gradient on active */
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Reset shadow on click */
-                transform: scale(1); /* Reset size on click */s
-            }
-    </style>
 </head>
 <body>
-
-    <!--<h1>League of Legends Profile</h1>-->
-    <img id="league" src="Footages/LoL_Logo_Flat_GOLD.png" />
-    <img id="img" src="Footages/Lol Profile.png">
-
-    <button type="button" onclick="document.getElementById('line').innerHTML = 'Since Season 2020' ">Since when I started playing?</button>
+ 
+    <button type="button" onclick="document.getElementById('line').innerHTML = 'Since Season 2020'">Since when I started playing?</button>
     <button type="button" onclick="document.getElementById('line').innerHTML = 'Diamond III'">Peak Rank?</button>
     <button type="button" onclick="document.getElementById('line').innerText = 'Yasuo⚔️1,102,256 Points'">Highset Mastery?</button>
     <button type="button" onclick="document.getElementById('line').innerText = 'Europe West (EUW)'">Which Server?</button>
     <button type="button" onclick="document.getElementById('line').innerText = ''">Clear</button>
-
     <h2 id="line"></h2>
 
-    <a href="https://www.op.gg/summoners/euw/XANDER-BLADE?queue_type=SOLORANKED">
-        <button>OP.GG</button>
+    <a 
+     href="https://www.op.gg/summoners/euw/XANDER-BLADE?queue_type=SOLORANKED" target="_blank">
+        <img id="img2" src="Images\Lol Profile.png" alt="OP.GG">
     </a>
 
-
-    <!--<script src="Scripts/Alert.js"></script>-->
-
 </body>
-</html>
