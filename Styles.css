@@ -33,41 +33,58 @@ body {
 }
 
 #img2:hover {
-    background: linear-gradient(115deg, #dffffd, #685f48);
+    background: linear-gradient(#32281E, #dffffd, #685f48);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
 }
 
 #img2:active {
-    background: linear-gradient(135deg, #bdb03b, #997e24);
+    background: linear-gradient(1#C89B3C, #bdb03b, #997e24);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: scale(1);
 }
 
-
 button {
-    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    background: linear-gradient(45deg, #C89B3C, #C8AA6E, #C89B3C);
     border: none;
     color: white;
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: 12px 25px;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    transition: all 0.3s ease;
-    margin: 10px;
-    margin-top: 30px;
+    transition: all 0.4s ease;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5), transparent 70%);
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+button:hover::before {
+    opacity: 1;
 }
 
 button:hover {
-    background: linear-gradient(115deg, #88d3ce, #6e45e2);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05);
+    background: linear-gradient(45deg, #D8B657, #D6C693, #D8B657);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255, 255, 255, 0.2);
+    transform: scale(1.08);
 }
 
 button:active {
-    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    background: linear-gradient(45deg, #C89B3C, #C8AA6E, #C89B3C);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: scale(1);
 }
+
