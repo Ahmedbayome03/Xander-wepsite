@@ -1,90 +1,89 @@
 body {
-    background-color: #2D2D2D;
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  background-color: #2d2d2d;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 
 #img {
-    width: 90%;
-    max-width: 1000px;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-    background: linear-gradient(135deg, #6e45e2, #88d3ce);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1);
+  background: linear-gradient(135deg, #5a4215, #d6a343);
+  width: 100%;
+  max-width: 1200px;
+  color: white;
+  padding: 5px 5px;
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 10px;
 }
 
-#img2 {
-    background: linear-gradient(135deg, #a37827, #836632);
-    width: 100%;
-    max-width: 1200px;
-    color: white;
-    padding: 5px 5px;
-    border-radius: 0px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin: 10px;
+#img:hover {
+  background: linear-gradient(#a3805d, #dffffd, #685f48);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.03);
 }
 
-#img2:hover {
-    background: linear-gradient(#32281E, #dffffd, #685f48);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05);
+#img:active {
+  background: linear-gradient(1#C89B3C, #bdb03b, #997e24);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
 }
 
-#img2:active {
-    background: linear-gradient(1#C89B3C, #bdb03b, #997e24);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1);
+#Clear {
+  background-color: #2d2d2d;
+  font-size: xx-large;
+  border: #2d2d2d;
 }
 
 button {
-    background: linear-gradient(45deg, #C89B3C, #C8AA6E, #C89B3C);
-    border: none;
-    color: white;
-    padding: 12px 25px;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 30px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition: all 0.4s ease;
-    margin: 15px;
-    position: relative;
-    overflow: hidden;
+  background: linear-gradient(45deg, #c89b3c, #c8aa6e, #c89b3c);
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  margin: 20px;
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
 }
 
 button::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.5), transparent 70%);
-    transition: opacity 0.5s ease;
-    opacity: 0;
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.5),
+    transparent 70%
+  );
+  transition: opacity 0.5s ease;
+  opacity: 0;
 }
 
 button:hover::before {
-    opacity: 1;
+  opacity: 1;
 }
 
 button:hover {
-    background: linear-gradient(45deg, #D8B657, #D6C693, #D8B657);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255, 255, 255, 0.2);
-    transform: scale(1.08);
+  background: linear-gradient(45deg, #d8b657, #d6c693, #d8b657);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255, 255, 255, 0.2);
+  transform: scale(1.08);
 }
 
 button:active {
-    background: linear-gradient(45deg, #C89B3C, #C8AA6E, #C89B3C);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1);
+  background: linear-gradient(45deg, #c89b3c, #c8aa6e, #c89b3c);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
 }
-

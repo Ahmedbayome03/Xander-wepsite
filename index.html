@@ -1,24 +1,56 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
+    <title>Xander's website</title>
+    <link rel="stylesheet" href="Styles.css" />
+    <link rel="icon" type="image/png" href="Images\Sett Icon Rounded.pn" />
+  </head>
+  <body>
+    <div>
+      <button onclick="Alert()">Say Hi</button>
+      <script src="Scripts/Welcome.js"></script>
+    </div>
+    <h2 id="h2"></h2>
 
-     <title>Xander's website</title>
-     <link rel="stylesheet" href="Styles.css">
-     <link rel="icon" type="image/png" href="Images\Sett icon2.png">    
+    <div>
+      <a
+        href="https://www.op.gg/summoners/euw/XANDER-BLADE?queue_type=SOLORANKED"
+        target="_blank"
+      >
+        <img id="img" src="Images\Lol Profile.png" alt="OP.GG" />
+      </a>
+    </div>
+    <button
+      type="button"
+      onclick="document.getElementById('line').innerHTML = 'Since Season 2020'"
+    >
+      <b>when I started playing?</b>
+    </button>
+    <button
+      type="button"
+      onclick="document.getElementById('line').innerHTML = 'Diamond III'"
+    >
+      <b>Peak Rank?</b>
+    </button>
 
-</head>
-<body>
- 
-    <button type="button" onclick="document.getElementById('line').innerHTML = 'Since Season 2020'">Since when I started playing?</button>
-    <button type="button" onclick="document.getElementById('line').innerHTML = 'Diamond III'">Peak Rank?</button>
-    <button type="button" onclick="document.getElementById('line').innerText = 'Yasuo⚔️1,102,256 Points'">Highset Mastery?</button>
-    <button type="button" onclick="document.getElementById('line').innerText = 'Europe West (EUW)'">Which Server?</button>
-    <button type="button" onclick="document.getElementById('line').innerText = ''">Clear</button>
-    <h2 id="line"></h2>
+    <button
+      type="button"
+      onclick="document.getElementById('line').innerText = 'Yasuo⚔️1,102,256 Points'"
+    >
+      <b>Mastery?</b>
+    </button>
+    <button
+      type="button"
+      onclick="document.getElementById('line').innerText = 'Europe West (EUW)'"
+    >
+      <b>Which Server?</b>
+    </button>
+    <div id="Clear">
+      <h2 id="line"></h2>
 
-    <a 
-     href="https://www.op.gg/summoners/euw/XANDER-BLADE?queue_type=SOLORANKED" target="_blank">
-        <img id="img2" src="Images\Lol Profile.png" alt="OP.GG">
-    </a>
-
-</body>
+      <button onclick="document.getElementById('line').innerText = ''">
+        Clear
+      </button>
+    </div>
+  </body>
+</html>
